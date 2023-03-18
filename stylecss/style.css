@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
 }
 
 .header__wrapper {
@@ -45,36 +45,100 @@ body {
     flex-wrap: wrap;
 }
 
-.header__item{
+.header__item {
     margin-right: 82px;
 }
 
 
 
-.header__item:last-child{
+.header__item:last-child {
     margin-right: 0;
 }
 
-.header__link{
+.header__link {
     font-size: 18px;
     line-height: 24px;
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
-.header__link:hover,.header__link:focus,.header__link:active{
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
     opacity: 0.75;
-    
+
 }
 
 /* Header style end*/
 
 
-.intro{
-    height: 100vh;
+.intro {
+    min-height: 100vh;
     background: url(/pictures/Hero.jpg) no-repeat center;
     background-size: cover;
-    max-width: 80%;
+    width: 100%;
     margin: 0 auto;
-  
+    padding-top: 263px;
+
 }
+
+
+.intro_title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    max-width: 619px;
+    margin-bottom: 22px;
+
+}
+
+.intro_subtitle {
+    max-width: 546px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 59px;
+}
+
+.search-form__info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_form_field{
+    background: transparent url(/pictures/Oval.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    width: 297px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+
+}
+
+.search_form_field::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+}
+
+.search_form_submit{
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    background: #1B7DFF;
+    color: white;
+    border: 0;
+}
+
+.search_form_submit:hover, .search_form_submit:focus, .search_form_submit:active{
+    background: #275da5;
+}
+
